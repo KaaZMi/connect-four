@@ -1,1 +1,1 @@
-# connect-four
+# Connect Four with AI
