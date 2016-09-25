@@ -1,0 +1,92 @@
+<html>
+
+	<head>
+		<title>Connect Four AI</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+
+	<body>
+
+		<h2><strong>Connect Four with AI</strong></h2>
+		<h4>LE BOULAIRE Mikaël</h4>
+
+		<div id="left">
+			<table id="connect-four">
+				<tr>
+					<td id="11" onmouseover="select(1)" onmouseout="unselect(1)" onclick="game(1)"></td>
+					<td id="21" onmouseover="select(2)" onmouseout="unselect(2)" onclick="game(2)"></td>
+					<td id="31" onmouseover="select(3)" onmouseout="unselect(3)" onclick="game(3)"></td>
+					<td id="41" onmouseover="select(4)" onmouseout="unselect(4)" onclick="game(4)"></td>
+					<td id="51" onmouseover="select(5)" onmouseout="unselect(5)" onclick="game(5)"></td>
+					<td id="61" onmouseover="select(6)" onmouseout="unselect(6)" onclick="game(6)"></td>
+					<td id="71" onmouseover="select(7)" onmouseout="unselect(7)" onclick="game(7)"></td>
+				</tr>
+				<tr>
+					<td id="12" onmouseover="select(1)" onmouseout="unselect(1)" onclick="game(1)"></td>
+					<td id="22" onmouseover="select(2)" onmouseout="unselect(2)" onclick="game(2)"></td>
+					<td id="32" onmouseover="select(3)" onmouseout="unselect(3)" onclick="game(3)"></td>
+					<td id="42" onmouseover="select(4)" onmouseout="unselect(4)" onclick="game(4)"></td>
+					<td id="52" onmouseover="select(5)" onmouseout="unselect(5)" onclick="game(5)"></td>
+					<td id="62" onmouseover="select(6)" onmouseout="unselect(6)" onclick="game(6)"></td>
+					<td id="72" onmouseover="select(7)" onmouseout="unselect(7)" onclick="game(7)"></td>
+				</tr>
+				<tr>
+					<td id="13" onmouseover="select(1)" onmouseout="unselect(1)" onclick="game(1)"></td>
+					<td id="23" onmouseover="select(2)" onmouseout="unselect(2)" onclick="game(2)"></td>
+					<td id="33" onmouseover="select(3)" onmouseout="unselect(3)" onclick="game(3)"></td>
+					<td id="43" onmouseover="select(4)" onmouseout="unselect(4)" onclick="game(4)"></td>
+					<td id="53" onmouseover="select(5)" onmouseout="unselect(5)" onclick="game(5)"></td>
+					<td id="63" onmouseover="select(6)" onmouseout="unselect(6)" onclick="game(6)"></td>
+					<td id="73" onmouseover="select(7)" onmouseout="unselect(7)" onclick="game(7)"></td>
+				</tr>
+				<tr>
+					<td id="14" onmouseover="select(1)" onmouseout="unselect(1)" onclick="game(1)"></td>
+					<td id="24" onmouseover="select(2)" onmouseout="unselect(2)" onclick="game(2)"></td>
+					<td id="34" onmouseover="select(3)" onmouseout="unselect(3)" onclick="game(3)"></td>
+					<td id="44" onmouseover="select(4)" onmouseout="unselect(4)" onclick="game(4)"></td>
+					<td id="54" onmouseover="select(5)" onmouseout="unselect(5)" onclick="game(5)"></td>
+					<td id="64" onmouseover="select(6)" onmouseout="unselect(6)" onclick="game(6)"></td>
+					<td id="74" onmouseover="select(7)" onmouseout="unselect(7)" onclick="game(7)"></td>
+				</tr>
+				<tr>
+					<td id="15" onmouseover="select(1)" onmouseout="unselect(1)" onclick="game(1)"></td>
+					<td id="25" onmouseover="select(2)" onmouseout="unselect(2)" onclick="game(2)"></td>
+					<td id="35" onmouseover="select(3)" onmouseout="unselect(3)" onclick="game(3)"></td>
+					<td id="45" onmouseover="select(4)" onmouseout="unselect(4)" onclick="game(4)"></td>
+					<td id="55" onmouseover="select(5)" onmouseout="unselect(5)" onclick="game(5)"></td>
+					<td id="65" onmouseover="select(6)" onmouseout="unselect(6)" onclick="game(6)"></td>
+					<td id="75" onmouseover="select(7)" onmouseout="unselect(7)" onclick="game(7)"></td>
+				</tr>
+				<tr>
+					<td id="16" onmouseover="select(1)" onmouseout="unselect(1)" onclick="game(1)"></td>
+					<td id="26" onmouseover="select(2)" onmouseout="unselect(2)" onclick="game(2)"></td>
+					<td id="36" onmouseover="select(3)" onmouseout="unselect(3)" onclick="game(3)"></td>
+					<td id="46" onmouseover="select(4)" onmouseout="unselect(4)" onclick="game(4)"></td>
+					<td id="56" onmouseover="select(5)" onmouseout="unselect(5)" onclick="game(5)"></td>
+					<td id="66" onmouseover="select(6)" onmouseout="unselect(6)" onclick="game(6)"></td>
+					<td id="76" onmouseover="select(7)" onmouseout="unselect(7)" onclick="game(7)"></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="right">
+			<strong>Difficulty :</strong>
+			<br>
+			<form action="">
+				<input type="radio" name="difficulty" value="1" checked>Easy (depth 1)
+				<br>
+				<input type="radio" name="difficulty" value="2">Normal (depth 2)
+				<br>
+				<input type="radio" name="difficulty" value="3">Hard (depth 3)
+			</form>
+			<br>
+			<p id="message"></p>
+			<p id="replay"></p>
+		</div>
+
+		<script type="text/javascript" src="script.js"></script>
+
+	</body>
+
+</html>

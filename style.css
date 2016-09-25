@@ -1,0 +1,62 @@
+body
+{
+	background : #f8f8f8;
+	font-family: "Calibri";
+}
+
+a
+{
+	color : #EA8601;
+	text-decoration : none;
+}
+
+a:hover
+{
+	text-decoration : underline overline;
+}
+
+#left {
+	float: left;
+}
+
+#right {
+	float: left;
+	margin-left: inherit;
+}
+
+#replay
+{
+	margin : 5px;
+	font-weight: bold;
+}
+
+#message
+{
+	margin : 5px;
+	font-weight: bold;
+}
+
+#erreur
+{
+	color : red;
+}
+
+#connect-four
+{
+	border-collapse : collapse;
+}
+
+#connect-four td
+{
+	border : 0;
+	width: 99px; 
+	height: 98px;
+	padding : 0px;
+	background-image: url("images/hole.png");
+}
+
+#connect-four img
+{
+	display : block;
+	margin-bottom : 0px;
+}
